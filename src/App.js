@@ -29,11 +29,6 @@ export default function App() {
         Advice #<span>{id}</span>
       </h1>
       <p className="advice-text">"{advice}"</p>
-      <img
-        className="pattern-divider"
-        src="./pattern-divider-desktop.svg"
-        alt="A pattern divider"
-      />
       <button className="dice-button" onClick={handleClick}>
         <img src="./icon-dice.svg" alt="A dice" />
       </button>

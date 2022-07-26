@@ -26,12 +26,16 @@ body {
 /* MAIN */
 
 .main {
-  max-width: 530px;
+  width: 550px;
+  margin: 0 2rem;
   background: hsl(217, 19%, 24%);
   border-radius: 10px;
-  padding: 4rem 2.8rem 6.2rem 2.8rem;
+  padding: 4rem 2.8rem 7.2rem 2.8rem;
   position: relative;
-  box-shadow: 0 0 30px rgb(50, 58, 73, 0.2);
+  box-shadow: 0 0 30px rgb(50 58 73 / 20%);
+  background-image: url(./pattern-divider-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: bottom 60px right 50%;
 }
 
 .advice-number {
@@ -67,9 +71,14 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 35rem) {
   .main {
-    padding: 4.8rem 1.8rem;
-    margin: 0 2rem;
+    background-image: url("./pattern-divider-mobile.svg");
+    background-size: 80%;
+  }
+
+  .advice-text {
+    font-size: 2.4rem;
+    background-size: 80%;
   }
 }
